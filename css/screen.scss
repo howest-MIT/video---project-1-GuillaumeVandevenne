@@ -1,0 +1,94 @@
+/*---------------------------------------/*
+ # SETTINGS
+/*---------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Poppins:wght@400;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css");
+
+$color-yellow: #fec116;
+$color-white: #fefefe;
+$color-grey: #41464a;
+$color-dark: #1d1922;
+
+$font-standard: "Poppins", sans-serif;
+$font-title: "Kalam", cursive;
+
+$fontsize-text: 1rem;
+$fontsize-headertitle: calc(1.375rem + 1.5vw);
+$fontsize-title: 1.4rem;
+$fontsize-subtitle: 1.25rem;
+$fontsize-small: 0.75rem;
+
+/*---------------------------------------/*
+ # GENERIC
+/*---------------------------------------*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*---------------------------------------/*
+   # ELEMENTS
+/*---------------------------------------*/
+body {
+  background-color: $color-white;
+  color: $color-grey;
+}
+h1 {
+  font-family: $font-title;
+  font-size: $fontsize-headertitle;
+  color: $color-yellow;
+}
+h2{
+    font-family: $font-title;
+    font-size: $fontsize-subtitle;
+}
+p{
+    font-family: $font-standard;
+}
+nav{
+    background-color: $color-dark;
+    padding: 2rem 0;
+}
+/*---------------------------------------/*
+ # OBJECTS
+/*---------------------------------------*/
+
+/*---------------------------------------/*
+ # COMPONENTS
+/*---------------------------------------*/
+.c-over{
+    padding: 2rem 0;
+}
+
+.c-concept{
+    padding: 2rem 0;
+    background-color: $color-dark;
+    color: $color-white;
+    &__text{
+        align-items: center;
+    }
+}
+.c-contact{
+    padding: 2rem 0;
+}
+
+.c-title{
+    padding-bottom: 2rem;
+}
+/*---------------------------------------/*
+ # BOOTSTRAP
+/*---------------------------------------*/
+
+.carousel .item {
+    height: 300px;
+    }
+.h-50{
+    width: 350;
+    height: 233;
+}
+
+/*---------------------------------------/*
+ # UTILITIES
+/*---------------------------------------*/
