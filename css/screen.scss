@@ -51,9 +51,16 @@ h3 {
 p {
   font-family: $font-standard;
 }
+
+hr{
+border-top: #fec116 2px solid;  
+}
 nav {
   background-color: $color-dark;
   padding: 2rem 0;
+}
+textarea{
+  padding-bottom: 0;
 }
 /*---------------------------------------/*
  # OBJECTS
@@ -62,6 +69,12 @@ nav {
 /*---------------------------------------/*
  # COMPONENTS
 /*---------------------------------------*/
+.c-carousel{
+  &__title{
+    text-shadow: 1px 1px 2px $color-dark;
+  }
+}
+
 .c-over {
   padding: 2rem 0;
   &__text{
@@ -90,20 +103,31 @@ nav {
   }
   &__form {
     padding-top: 2rem;
+    padding-bottom: 2rem;
     margin-bottom: 5rem;
     margin-top: 3rem;
     box-shadow: 2px 2px 6px black;
   }
+  &__formulier{
+    padding-bottom: 2rem;
+  }
+  &__link{
+    text-decoration: none;
+    color: $color-dark;
+    &:hover{
+      color: $color-yellow;
+    }
+  }
 }
 .c-knop {
-  background-color: $color-yellow !important;
+  background-color: $color-yellow;
   padding: 0.75rem 0.75rem;
   border-radius: 13px;
   text-decoration: none;
   color: $color-white;
   &:hover {
     color: $color-yellow;
-    background-color: $color-dark !important;
+    background-color: $color-dark ;
     transition: 0.4s;
   }
 }
@@ -113,6 +137,7 @@ nav {
 }
 .c-nieuwsbrief {
   background-image: url(../images/plaat_nieuwbrief1.png);
+  height: 378px;
   background-color: $color-dark;
   background-position: center;
   background-repeat: no-repeat;
@@ -126,20 +151,14 @@ nav {
   &__text {
     color: $color-white;
   }
-  &__form{
-    margin-left: 35rem;
+  &__icn{
+    padding: 3rem 0;
   }
 }
 .c-footer {
-  padding-top: 3rem;
+  padding-top: 0.75rem;
   background-color: $color-dark;
   color: $color-white;
-  &__img {
-    margin-bottom: 2rem;
-  }
-  &__txt {
-    margin-top: 3rem;
-  }
   &__link {
     padding-top: 3rem;
     color: $color-white;
@@ -151,15 +170,28 @@ nav {
     font-size: $fontsize-small;
   }
 }
+.c-top a {
+  color: $color-yellow;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  padding-bottom: 2rem;
+  position: fixed;
+  bottom: 0.5rem;
+  right: 1rem;
+  text-decoration: none;
+  &:hover{
+    padding-bottom: 2.5rem;
+    transition: 0.4s;
+  }
+
+}
+
+.c-map{
+  height: 400px;
+}
 /*---------------------------------------/*
  # BOOTSTRAP
 /*---------------------------------------*/
-
-.c-carousel {
-  overflow: hidden;
-  height: 70vh;
-}
-
 .form-control {
   border: none;
   border-radius: 0;
@@ -202,6 +234,8 @@ nav {
   &:focus{
     box-shadow: none;
     border: none;
+    color: $color-dark;
+    background-color: $color-yellow;
   }
 }
 .btn-check:focus+.btn-primary, .btn-primary:focus{
@@ -209,9 +243,21 @@ nav {
   background-color: $color-dark;
   color: $color-yellow;
 }
+
+.btn-outline-secondary{
+  color: #fec116;
+  background-color: $color-dark;
+  border-color: $color-dark;
+  &:hover{
+    transition: 0.4s;
+    color: $color-white;
+    background-color: $color-yellow;
+    border-color: $color-yellow;
+  }
+  &:focus{
+    box-shadow: none;
+  }
+}
 /*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/
-.a:active{
-  color: #fec116;
-}

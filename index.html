@@ -12,7 +12,7 @@
   <body>
     <nav id="top" class="navbar navbar-expand-md navbar-dark">
       <div class="container">
-        <a href="index.html" class="navbar-brand"><img src="images/logonavbar.png" alt="logo-ververie" width="270" height="80" /></a>
+        <a href="index.html" class="navbar-brand"><img src="images/logonavbar.png" alt="logo-ververie" width="285" height="80" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,19 +34,39 @@
         </div>
       </div>
     </nav>
+    <div class="c-top">
+      <a href="#top"><i class="bi bi-arrow-up-square-fill"></i></a>
+    </div>
     <header>
-      <!-- <h1>Ontdek de Ververie!</h1> -->
-      <!-- Video -->
-      <div id="carouselExampleFade" class="c-carousel carousel slide carousel-fade" data-bs-ride="carousel">
+      <h1>Ontdek de Ververie!</h1>
+      <video src="video/ververievideo.mp4" width="1420" height="480" controls></video>
+      <div id="carouselExampleFade" class="c-carousel carousel slide carousel-fade container-fluid g-0" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/carrousel1.png" class="d-block w-100 h-50" alt="carrousel1" />
+            <img src="images/carrouselnew.png" class="d-block w-100 h-50" alt="carrousel1" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="c-carousel__title">Nieuwe platen</h5>
+              <p class="c-carousel__title">De ververie houdt u op de hoogte van vers vinyl!</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="images/carousel2.png" class="d-block w-100 h-50" width="350" height="233" alt="carrousel2" />
+            <img src="images/carousel2new.jpg" class="d-block w-100 h-50" width="350" height="233" alt="carrousel2" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="c-carousel__title">2e hands platen</h5>
+              <p class="c-carousel__title">Reeds gebruikte platen krijgen een 2e leven</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="images/carrousel3.png" class="d-block w-100 h-50" width="350" height="233" alt="carrousel3" />
+            <img src="images/carrousel3new.jpg" class="d-block w-100 h-50" width="350" height="233" alt="carrousel3" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="c-carousel__title">Splinternieuwe platen</h5>
+              <p class="c-carousel__title">De nieuwste exclusieve platen</p>
+            </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -118,57 +138,66 @@
                   <div class="col-lg-6 c-contact__info">
                     <i class="bi bi-clock-fill c-contact__icon"></i>
                     <h3>Openingsuren</h3>
-                    <p>Maandag & Dinsdag: Gesloten Woensdag - Zaterdag: 14u00 - 01u00 Zondag : 14u00 - 22u</p>
+                    <p>
+                      Maandag & Dinsdag: Gesloten <br />
+                      Woensdag - Zaterdag: 14u00 - 01u00 <br />
+                      Zondag : 14u00 - 22u
+                    </p>
                   </div>
                   <div class="col-lg-6 c-contact__info">
                     <i class="bi bi-envelope-fill c-contact__icon"></i>
                     <h3>E-mail</h3>
-                    <p>info@deververie.be</p>
+                    <a class="c-contact__link" href="mailto:info@deververie.be">info@deververie.be</a>
                   </div>
                   <div class="col-lg-6 c-contact__info">
                     <i class="bi bi-telephone-fill c-contact__icon"></i>
                     <h3>Telefoon</h3>
-                    <p>+32 1234567890</p>
+                    <a class="c-contact__link" href="tel:+32498234231">+32 498 23 42 31</a>
                   </div>
                 </div>
               </div>
             </div>
             <div class="offset-lg-1 col-lg-4 text-center c-contact__form">
               <h2>Stel uw vraag</h2>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="email" placeholder="Naam" />
-              </div>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="tele" placeholder="E-mail adres" />
-              </div>
-              <div class="mb-3">
-                <textarea class="form-control" id="textarea" placeholder="Uw vraag"></textarea>
+              <div class="c-contact__formulier">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Naam Voornaam" />
+                  <label for="floatingInput">Naam Voornaam</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="email" placeholder="E-mail adres" />
+                  <label for="floatingInput">E-mail adres</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <textarea class="form-control" id="textarea" placeholder="Uw vraag"></textarea>
+                  <label for="floatingInput">Uw vraag</label>
+                </div>
               </div>
               <a class="c-knop" href="#">Stuur uw bericht</a>
             </div>
           </div>
         </div>
-        <div class="container-fluid g-0">
+        <div class="container-fluid c-map g-0">
           <iframe class="c-contact__map" src="https://maps.google.com/maps?q=de%20ververie%20kuurne&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
         </div>
       </section>
       <section class="c-nieuwsbrief">
-        <h1 class="c-nieuwsbrief__title">Schrijf je in voor onze nieuwsbrief</h1>
+        <h2 class="c-nieuwsbrief__title">Schrijf je in voor onze nieuwsbrief</h2>
         <p>
-          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Schrijf je in</button>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Schrijf je in <i class="bi bi-arrow-down c-nieuwsbrief__icn"></i></button>
         </p>
         <div class="collapse" id="collapseExample">
-          <div class="offset-lg-5 col-lg-4 c-nieuwsbrief__form">
-            <div class="card card-body d-flex justify-content-center  mb-3">
-              <input type="text" class="form-control" id="e-mail" placeholder="E-mail adres" aria-describedby="button-addon2" />
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+          <div class="offset-lg-4 col-lg-4 c-nieuwsbrief__form">
+            <div class="d-flex justify-content-center mb-3">
+              <input type="email" class="form-control" id="e-mail" placeholder="E-mail adres" aria-describedby="button-addon2" />
+              <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" id="button-addon2">Verstuur</button>
             </div>
           </div>
         </div>
       </section>
       <footer class="c-footer">
         <div class="container">
-          <div class="row">
+          <div class="row my-4 align-items-center">
             <div class="col-lg-3">
               <img class="c-footer__img" src="images/cropped-Logo_deververie_wit-300x282.png" alt="logo-ververie" width="116" height="110" />
             </div>
@@ -185,6 +214,8 @@
               <a class="c-footer__link" href="https://www.facebook.com/HowestMIT/"><i class="bi bi-facebook"></i></a>
               <a class="c-footer__link" href="https://www.instagram.com/howest_multimedia_en_it/"><i class="bi bi-instagram"></i></a>
             </div>
+          </div>
+          <div class="row">
             <hr />
             <div class="offset-lg-4 col-lg-4 text-center">
               <p class="c-footer__copy">&copy;Guillaume Vandevenne - 1MIT-VF - Howest</p>
