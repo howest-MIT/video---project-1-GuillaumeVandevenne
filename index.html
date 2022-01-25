@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 1 Video</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/screen.css" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/screen.css" />
   </head>
   <body>
     <nav id="top" class="navbar navbar-expand-md navbar-dark">
@@ -35,9 +35,9 @@
       </div>
     </nav>
     <header>
-      <h1>Ontdek de Ververie!</h1>
+      <!-- <h1>Ontdek de Ververie!</h1> -->
       <!-- Video -->
-      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div id="carouselExampleFade" class="c-carousel carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="images/carrousel1.png" class="d-block w-100 h-50" alt="carrousel1" />
@@ -63,8 +63,8 @@
       <section id="over" class="c-over">
         <div class="container">
           <div class="row">
-            <h1 class="c-title"><img src="images/hoplogozwart.png" alt="hoplogo-zwart" width="38" height="70" /> Over</h1>
-            <div class="col-lg-6">
+            <h2 class="c-title"><img src="images/hoplogozwart.png" alt="hoplogo-zwart" width="38" height="70" /> Over</h2>
+            <div class="col-lg-6 c-over__text align-self-center">
               <p>
                 De ververie begon 8 augustus 2018. Een nieuwe kroeg in het hartje van Kuurne. De uitbater Deef was onderwijzer in het lager onderwijs in de centrumschool Kuurne. Tot de grote liefde voor koffie, bier, taart, vinyl en grote muziek zo groot werd dat hij besloot een eigen ‘koffievynilkroeg’ uit te bouwen. <br /><br />
                 Ondertussen is de ververie gekend voor een fijn concept. Dat niet verlegen is om nu en dan eens speciaal uit de hoek te komen, is al geweten. Een thema-avond, nu en dan eens een optreden en comedy, alles passeert de revue. Altijd met goesting. Altijd met aandacht voor sfeer.
@@ -83,11 +83,11 @@
       <section id="concept" class="c-concept">
         <div class="container">
           <div class="row">
-            <h1 class="c-title"><img src="images/ververielogowit.png" alt="hoplogo-zwart" width="38" height="70" /> Concept</h1>
+            <h2 class="c-title"><img src="images/ververielogowit.png" alt="hoplogo-zwart" width="38" height="70" /> Concept</h2>
             <div class="col-lg-6">
               <img src="images/ververieplaten.png" alt="concept-foto" width="510" height="500" />
             </div>
-            <div class="col-lg-6 c-concept__text">
+            <div class="col-lg-6 align-self-center">
               <p>
                 De ververie is een gezellig kroeg waar je verschillende soorten koffie, lekker gebak, een eigenzinnige tapas, een stevig pintje of een streekbiertje kan vinden. <br /><br />
                 Naast dit alles is er een vinylshop in de winkel. Bestel je drank aan je tafel en ga eens kijken naar de het assortiment tweedehandsplaatjes en nieuwe pareltjes.
@@ -100,25 +100,99 @@
           </div>
         </div>
       </section>
-      <section class="c-contact">
+      <section id="contact" class="c-contact">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
-              <h1><img src="images/hoplogozwart.png" alt="hoplogo-zwart" width="38" height="70" /> Contact</h1>
-              <h2>Openingsuren</h2>
+              <h2><img src="images/hoplogozwart.png" alt="hoplogo-zwart" width="38" height="70" /> Contact</h2>
               <div class="container">
                 <div class="row">
-                  <div class="col-lg-6">
-                    
+                  <div class="col-lg-6 c-contact__info">
+                    <i class="bi bi-geo-alt-fill c-contact__icon"></i>
+                    <h3>Adres</h3>
+                    <p>
+                      Koningin Elisabethstraat 15, <br />
+                      8520 Kuurne
+                    </p>
+                  </div>
+                  <div class="col-lg-6 c-contact__info">
+                    <i class="bi bi-clock-fill c-contact__icon"></i>
+                    <h3>Openingsuren</h3>
+                    <p>Maandag & Dinsdag: Gesloten Woensdag - Zaterdag: 14u00 - 01u00 Zondag : 14u00 - 22u</p>
+                  </div>
+                  <div class="col-lg-6 c-contact__info">
+                    <i class="bi bi-envelope-fill c-contact__icon"></i>
+                    <h3>E-mail</h3>
+                    <p>info@deververie.be</p>
+                  </div>
+                  <div class="col-lg-6 c-contact__info">
+                    <i class="bi bi-telephone-fill c-contact__icon"></i>
+                    <h3>Telefoon</h3>
+                    <p>+32 1234567890</p>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="offset-lg-1 col-lg-4 text-center c-contact__form">
+              <h2>Stel uw vraag</h2>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="email" placeholder="Naam" />
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="tele" placeholder="E-mail adres" />
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" id="textarea" placeholder="Uw vraag"></textarea>
+              </div>
+              <a class="c-knop" href="#">Stuur uw bericht</a>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid g-0">
+          <iframe class="c-contact__map" src="https://maps.google.com/maps?q=de%20ververie%20kuurne&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+      </section>
+      <section class="c-nieuwsbrief">
+        <h1 class="c-nieuwsbrief__title">Schrijf je in voor onze nieuwsbrief</h1>
+        <p>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Schrijf je in</button>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="offset-lg-5 col-lg-4 c-nieuwsbrief__form">
+            <div class="card card-body d-flex justify-content-center  mb-3">
+              <input type="text" class="form-control" id="e-mail" placeholder="E-mail adres" aria-describedby="button-addon2" />
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+            </div>
           </div>
         </div>
       </section>
+      <footer class="c-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <img class="c-footer__img" src="images/cropped-Logo_deververie_wit-300x282.png" alt="logo-ververie" width="116" height="110" />
+            </div>
+            <div class="col-lg-2 text-center">
+              <p class="c-footer__txt">info@deververie.be</p>
+            </div>
+            <div class="col-lg-2 text-center">
+              <p class="c-footer__txt">+32 498 23 42 31</p>
+            </div>
+            <div class="col-lg-2 text-center">
+              <p class="c-footer__txt">Kon. Elisabethstraat 15</p>
+            </div>
+            <div class="col-lg-1 offset-lg-2 text-center">
+              <a class="c-footer__link" href="https://www.facebook.com/HowestMIT/"><i class="bi bi-facebook"></i></a>
+              <a class="c-footer__link" href="https://www.instagram.com/howest_multimedia_en_it/"><i class="bi bi-instagram"></i></a>
+            </div>
+            <hr />
+            <div class="offset-lg-4 col-lg-4 text-center">
+              <p class="c-footer__copy">&copy;Guillaume Vandevenne - 1MIT-VF - Howest</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -16,7 +16,7 @@ $font-title: "Kalam", cursive;
 $fontsize-text: 1rem;
 $fontsize-headertitle: calc(1.375rem + 1.5vw);
 $fontsize-title: 1.4rem;
-$fontsize-subtitle: 1.25rem;
+$fontsize-icon: 1.75rem;
 $fontsize-small: 0.75rem;
 
 /*---------------------------------------/*
@@ -35,21 +35,25 @@ body {
   background-color: $color-white;
   color: $color-grey;
 }
-h1 {
+h1,
+h2 {
   font-family: $font-title;
   font-size: $fontsize-headertitle;
   color: $color-yellow;
 }
-h2{
-    font-family: $font-title;
-    font-size: $fontsize-subtitle;
+h3 {
+  color: $color-dark;
+  font-family: $font-title;
+  font-size: $fontsize-title;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-p{
-    font-family: $font-standard;
+p {
+  font-family: $font-standard;
 }
-nav{
-    background-color: $color-dark;
-    padding: 2rem 0;
+nav {
+  background-color: $color-dark;
+  padding: 2rem 0;
 }
 /*---------------------------------------/*
  # OBJECTS
@@ -58,37 +62,156 @@ nav{
 /*---------------------------------------/*
  # COMPONENTS
 /*---------------------------------------*/
-.c-over{
-    padding: 2rem 0;
+.c-over {
+  padding: 2rem 0;
+  &__text{
+    padding: 1rem 1rem;
+  }
 }
 
-.c-concept{
+.c-concept {
+  padding: 2rem 0;
+  background-color: $color-dark;
+  color: $color-white;
+}
+.c-contact {
+  padding-top: 2rem;
+  &__icon {
+    color: $color-yellow;
+    font-size: $fontsize-icon;
     padding: 2rem 0;
-    background-color: $color-dark;
+  }
+  &__map {
+    width: 100%;
+    height: 25rem;
+  }
+  &__info {
+    padding: 2rem 0;
+  }
+  &__form {
+    padding-top: 2rem;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+    box-shadow: 2px 2px 6px black;
+  }
+}
+.c-knop {
+  background-color: $color-yellow !important;
+  padding: 0.75rem 0.75rem;
+  border-radius: 13px;
+  text-decoration: none;
+  color: $color-white;
+  &:hover {
+    color: $color-yellow;
+    background-color: $color-dark !important;
+    transition: 0.4s;
+  }
+}
+
+.c-title {
+  padding-bottom: 2rem;
+}
+.c-nieuwsbrief {
+  background-image: url(../images/plaat_nieuwbrief1.png);
+  background-color: $color-dark;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+  &__title {
+    text-shadow: 2px 2px $color-dark;
+  }
+  &__text {
     color: $color-white;
-    &__text{
-        align-items: center;
+  }
+  &__form{
+    margin-left: 35rem;
+  }
+}
+.c-footer {
+  padding-top: 3rem;
+  background-color: $color-dark;
+  color: $color-white;
+  &__img {
+    margin-bottom: 2rem;
+  }
+  &__txt {
+    margin-top: 3rem;
+  }
+  &__link {
+    padding-top: 3rem;
+    color: $color-white;
+    &:hover {
+      color: $color-yellow;
     }
-}
-.c-contact{
-    padding: 2rem 0;
-}
-
-.c-title{
-    padding-bottom: 2rem;
+  }
+  &__copy {
+    font-size: $fontsize-small;
+  }
 }
 /*---------------------------------------/*
  # BOOTSTRAP
 /*---------------------------------------*/
 
-.carousel .item {
-    height: 300px;
-    }
-.h-50{
-    width: 350;
-    height: 233;
+.c-carousel {
+  overflow: hidden;
+  height: 70vh;
 }
 
+.form-control {
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid $color-dark;
+  &::placeholder {
+    color: $color-dark;
+  }
+}
+.form-control:focus {
+  border-color: $color-yellow;
+  box-shadow: none;
+}
+
+.form-control .input {
+  color: $color-dark;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: $color-white;
+  &:hover {
+    color: $color-yellow;
+  }
+}
+
+.card{
+  width: 20rem;
+  padding: 0 0;
+  border-bottom: $color-dark;
+}
+
+.btn-primary{
+  border: none;
+  background-color: $color-dark;
+  color: $color-yellow;
+  &:hover{
+    color: $color-dark;
+    background-color: $color-yellow;
+    transition: 0.4s;
+  }
+  &:focus{
+    box-shadow: none;
+    border: none;
+  }
+}
+.btn-check:focus+.btn-primary, .btn-primary:focus{
+  border: none;
+  background-color: $color-dark;
+  color: $color-yellow;
+}
 /*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/
+.a:active{
+  color: #fec116;
+}
