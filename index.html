@@ -10,22 +10,22 @@
     <link rel="stylesheet" href="css/screen.css" />
   </head>
   <body>
-    <nav id="top" class="navbar navbar-expand-md navbar-dark">
-      <div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container-fluid">
         <a href="index.html" class="navbar-brand"><img src="images/logonavbar.png" alt="logo-ververie" width="285" height="80" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <i class="bi bi-list c-ham"></i>
         </button>
         <div class="collapse navbar-collapse" id="toggleMobileMenu">
           <ul class="navbar-nav ms-auto text-center">
             <li>
-              <a href="#over" class="nav-link">Over</a>
+              <a href="#over" class="nav-link active" aria-current="page">Over</a>
             </li>
             <li>
-              <a href="#concept" class="nav-link">Concept</a>
+              <a href="#concept" class="nav-link active" aria-current="page">Concept</a>
             </li>
             <li>
-              <a href="#contact" class="nav-link">Contact</a>
+              <a href="#contact" class="nav-link active" aria-current="page">Contact</a>
             </li>
             <li>
               <a href="#shop" class="nav-link c-shop">Shop</a>
@@ -37,9 +37,7 @@
     <div class="c-top">
       <a href="#top"><i class="bi bi-arrow-up-square-fill"></i></a>
     </div>
-    <header>
-      <h1>Ontdek de Ververie!</h1>
-      <video src="video/ververievideo.mp4" width="1420" height="480" controls></video>
+    <header id="top">
       <div id="carouselExampleFade" class="c-carousel carousel slide carousel-fade container-fluid g-0" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -78,8 +76,43 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <section class="c-video">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="c-video__title"><img src="images/hoplogozwart.png" alt="hoplogo-zwart" width="38" height="70" /> Ontdek de Ververie!</h1>
+            </div>
+            <div class="col-xl-10 text-center c-video__container">
+              <iframe  width="560" height="315" src="https://www.youtube.com/embed/DGGRbTobnE0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
     <main>
+      <section class="c-recensie">
+        <div class="container">
+          <div class="row">
+            <h2><img src="images/ververielogowit.png" alt="hoplogo-zwart" width="38" height="70" /> Wat anderen van de ververie vinden</h2>
+            <div class="col-lg-3 col-md-4 offset-lg-1 c-recensie__bruno bubble-bottom-left">
+              <h3>Bruno <i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-fill c-recensie__star"></i></h3>
+              <p class="text-center">
+                <br />
+                "Heel mooi en gezellig café! Leuk aanbod van 2de hands platen, deze zijn in heel mooie staat en fair qua prijs."
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-4 offset-md-1 offset-lg-1 c-recensie__joseline bubble-bottom-left">
+              <h3>Nicolas <i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-half c-recensie__star"></i></h3>
+              <p class="text-center">"Gewoon top voor iedere muziekliefhebber, de muziek is gewoon top en de bediening is ook helemaal zo als het moet. Het voelt als binnenstappen in de jaren 50 door de platen en de jukebox."</p>
+            </div>
+            <div class="col-lg-3 col-md-12 offset-lg-1 c-recensie__greta bubble-bottom-left">
+              <h3>Greta <i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-fill c-recensie__star"></i></h3>
+              <p class="c-recensie__subtitle"><em> CEO, Acme Industries</em></p>
+              <p class="text-center">"Toffe zaak! Mooi interieur, gezellige sfeer, leuke keuze aan frisdranken, koffie en thee maar ook verrassende biertjes. Wij komen zeker nog veel terug!"</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="over" class="c-over">
         <div class="container">
           <div class="row">
@@ -94,8 +127,8 @@
                 Kortom, gezelligheid, sfeer, drank en vooral goede muziek. Het Ververie-team zal je met open armen en grote glimlach ontvangen en bedienen.
               </p>
             </div>
-            <div class="offset-lg-1 col-lg-5">
-              <img src="images/ververieomgeving.png" alt="over-foto" width="510" height="500" />
+            <div class="offset-lg-1 text-center col-lg-5">
+              <img src="images/ververieomgevingshadow.png" alt="over-foto" width="510" height="500" />
             </div>
           </div>
         </div>
@@ -104,8 +137,8 @@
         <div class="container">
           <div class="row">
             <h2 class="c-title"><img src="images/ververielogowit.png" alt="hoplogo-zwart" width="38" height="70" /> Concept</h2>
-            <div class="col-lg-6">
-              <img src="images/ververieplaten.png" alt="concept-foto" width="510" height="500" />
+            <div class="col-lg-6 text-center">
+              <img src="images/ververieplatenshadow.png" alt="concept-foto" width="510" height="500" />
             </div>
             <div class="col-lg-6 align-self-center">
               <p>
@@ -127,15 +160,19 @@
               <h2><img src="images/hoplogozwart.png" alt="hoplogo-zwart" width="38" height="70" /> Contact</h2>
               <div class="container">
                 <div class="row">
-                  <div class="col-lg-6 c-contact__info">
+                  <div class="sidenav">
+                    <a href="https://www.facebook.com/deververie/" target="blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/deververie/" target="blank"><i class="bi bi-instagram"></i></a>
+                  </div>
+                  <div class="col-lg-6 col-md-5 c-contact__info">
                     <i class="bi bi-geo-alt-fill c-contact__icon"></i>
                     <h3>Adres</h3>
-                    <p>
+                    <a class="c-contact__link" href="https://www.google.com/maps/dir//De+Ververie+Kon.+Elisabethstraat+15+8520+Kuurne/@50.8509126,3.2856589,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47c33be6e00563f3:0x9063a6e0f1a72970!2m2!1d3.2856589!2d50.8509126" target="blank">
                       Koningin Elisabethstraat 15, <br />
-                      8520 Kuurne
-                    </p>
+                      8520 Kuurne</a
+                    >
                   </div>
-                  <div class="col-lg-6 c-contact__info">
+                  <div class="col-lg-6 col-md-5 c-contact__info">
                     <i class="bi bi-clock-fill c-contact__icon"></i>
                     <h3>Openingsuren</h3>
                     <p>
@@ -144,12 +181,12 @@
                       Zondag : 14u00 - 22u
                     </p>
                   </div>
-                  <div class="col-lg-6 c-contact__info">
+                  <div class="col-lg-6 col-md-5 c-contact__info">
                     <i class="bi bi-envelope-fill c-contact__icon"></i>
                     <h3>E-mail</h3>
                     <a class="c-contact__link" href="mailto:info@deververie.be">info@deververie.be</a>
                   </div>
-                  <div class="col-lg-6 c-contact__info">
+                  <div class="col-lg-6 col-md-5 c-contact__info">
                     <i class="bi bi-telephone-fill c-contact__icon"></i>
                     <h3>Telefoon</h3>
                     <a class="c-contact__link" href="tel:+32498234231">+32 498 23 42 31</a>
@@ -198,7 +235,7 @@
       <footer class="c-footer">
         <div class="container">
           <div class="row my-4 align-items-center">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-12 text-center">
               <img class="c-footer__img" src="images/cropped-Logo_deververie_wit-300x282.png" alt="logo-ververie" width="116" height="110" />
             </div>
             <div class="col-lg-2 text-center">
@@ -211,8 +248,8 @@
               <p class="c-footer__txt">Kon. Elisabethstraat 15</p>
             </div>
             <div class="col-lg-1 offset-lg-2 text-center">
-              <a class="c-footer__link" href="https://www.facebook.com/HowestMIT/"><i class="bi bi-facebook"></i></a>
-              <a class="c-footer__link" href="https://www.instagram.com/howest_multimedia_en_it/"><i class="bi bi-instagram"></i></a>
+              <a class="c-footer__link" href="https://www.facebook.com/deververie/" target="blank"><i class="bi bi-facebook"></i></a>
+              <a class="c-footer__link" href="https://www.instagram.com/deververie/" target="blank"><i class="bi bi-instagram"></i></a>
             </div>
           </div>
           <div class="row">

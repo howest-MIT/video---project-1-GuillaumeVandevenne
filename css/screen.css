@@ -58,8 +58,93 @@ textarea {
 /*---------------------------------------/*
  # COMPONENTS
 /*---------------------------------------*/
+.c-video {
+  margin: -1rem;
+  padding-bottom: 3rem;
+}
+.c-video__title {
+  padding: 2rem 0;
+}
+.c-video__container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.c-video__container iframe, .c-video__container object, .c-video__container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .c-carousel__title {
   text-shadow: 1px 1px 2px #1d1922;
+}
+
+.c-recensie {
+  padding: 3rem 0;
+  color: #1d1922;
+  background-color: #1d1922;
+  margin-top: 1rem;
+}
+.c-recensie__bruno {
+  padding: 2rem 1rem;
+  position: relative;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  width: 300px;
+  background: #fff;
+  border-radius: 40px;
+  padding: 24px;
+  color: #000;
+}
+.c-recensie__joseline {
+  padding: 2rem 1rem;
+  position: relative;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  width: 300px;
+  background: #fff;
+  border-radius: 40px;
+  padding: 24px;
+  color: #000;
+}
+.c-recensie__greta {
+  padding: 2rem 1rem;
+  background-color: #fec116;
+  padding: 2rem 1rem;
+  position: relative;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  width: 300px;
+  background: #fff;
+  border-radius: 40px;
+  padding: 24px;
+  color: #000;
+}
+.c-recensie__subtitle {
+  color: #41464a;
+}
+.c-recensie__star {
+  color: #fec116;
+}
+
+.bubble-bottom-left:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-right: 24px solid #fff;
+  border-left: 12px solid transparent;
+  border-top: 12px solid #fff;
+  border-bottom: 20px solid transparent;
+  right: 32px;
+  bottom: -24px;
 }
 
 .c-over {
@@ -67,6 +152,9 @@ textarea {
 }
 .c-over__text {
   padding: 1rem 1rem;
+}
+.c-over__img {
+  box-shadow: 9px 16px 0px 5px #fec116;
 }
 
 .c-concept {
@@ -102,10 +190,11 @@ textarea {
 }
 .c-contact__link {
   text-decoration: none;
-  color: #1d1922;
+  color: #41464a;
 }
 .c-contact__link:hover {
   color: #fec116;
+  transition: 0.4s;
 }
 
 .c-knop {
@@ -160,6 +249,7 @@ textarea {
 }
 .c-footer__copy {
   font-size: 0.75rem;
+  color: #41464a;
 }
 
 .c-top a {
@@ -238,7 +328,8 @@ textarea {
   background-color: #fec116;
 }
 
-.btn-check:focus + .btn-primary, .btn-primary:focus {
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
   border: none;
   background-color: #1d1922;
   color: #fec116;
@@ -259,6 +350,55 @@ textarea {
   box-shadow: none;
 }
 
+.carousel-indicators [data-bs-target] {
+  background-color: #fec116;
+}
+
+.navbar-dark .navbar-toggler {
+  color: #1d1922;
+  border-color: #1d1922;
+}
+
+.c-ham {
+  font-size: calc(1.375rem + 1.5vw);
+  color: #fefefe;
+}
+.c-ham:hover {
+  color: #fec116;
+}
+
+.active {
+  color: #fec116;
+}
+
 /*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/
+/* The sidebar menu */
+.sidenav {
+  margin-top: 9rem;
+  height: auto;
+  /* Full-height: remove this if you want "auto" height */
+  width: auto;
+  /* Set the width of the sidebar */
+  position: absolute;
+  /* Fixed Sidebar (stay in place on scroll) */
+  left: 0;
+  background-color: #fec116;
+  /* Black */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 2px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 6px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #1d1922;
+  display: block;
+}
+.sidenav a:hover {
+  color: #fefefe;
+  transition: 0.4s;
+}
