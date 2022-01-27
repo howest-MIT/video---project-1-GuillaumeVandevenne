@@ -10,25 +10,28 @@
     <link rel="stylesheet" href="css/screen.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark">
+    <nav id="top" class="navbar navbar-expand-md navbar-dark">
       <div class="container-fluid">
-        <a href="index.html" class="navbar-brand"><img src="images/logonavbar.png" alt="logo-ververie" width="285" height="80" /></a>
+        <a href="index.html" class="navbar-brand"><img class="c-nav__img img-fluid" src="images/logonavbar.png" alt="logo-ververie" width="225" height="40" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
           <i class="bi bi-list c-ham"></i>
         </button>
         <div class="collapse navbar-collapse" id="toggleMobileMenu">
           <ul class="navbar-nav ms-auto text-center">
             <li>
-              <a href="#over" class="nav-link active" aria-current="page">Over</a>
+              <a href="#video" class="nav-link">Video</a>
             </li>
             <li>
-              <a href="#concept" class="nav-link active" aria-current="page">Concept</a>
+              <a href="#recensie" class="nav-link">Recensie</a>
             </li>
             <li>
-              <a href="#contact" class="nav-link active" aria-current="page">Contact</a>
+              <a href="#over" class="nav-link">Over</a>
             </li>
             <li>
-              <a href="#shop" class="nav-link c-shop">Shop</a>
+              <a href="#concept" class="nav-link">Concept</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
         </div>
@@ -37,7 +40,7 @@
     <div class="c-top">
       <a href="#top"><i class="bi bi-arrow-up-square-fill"></i></a>
     </div>
-    <header id="top">
+    <header>
       <div id="carouselExampleFade" class="c-carousel carousel slide carousel-fade container-fluid g-0" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -46,22 +49,22 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/carrouselnew.png" class="d-block w-100 h-50" alt="carrousel1" />
-            <div class="carousel-caption d-none d-md-block">
+            <img src="images/carrousel1new1.png" class="d-block w-100 h-50" alt="carrousel1" />
+            <div class="carousel-caption">
               <h5 class="c-carousel__title">Nieuwe platen</h5>
               <p class="c-carousel__title">De ververie houdt u op de hoogte van vers vinyl!</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/carousel2new.jpg" class="d-block w-100 h-50" width="350" height="233" alt="carrousel2" />
-            <div class="carousel-caption d-none d-md-block">
+            <img src="images/carousel2new1.png" class="d-block w-100 h-50" width="350" height="233" alt="carrousel2" />
+            <div class="carousel-caption">
               <h5 class="c-carousel__title">2e hands platen</h5>
               <p class="c-carousel__title">Reeds gebruikte platen krijgen een 2e leven</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/carrousel3new.jpg" class="d-block w-100 h-50" width="350" height="233" alt="carrousel3" />
-            <div class="carousel-caption d-none d-md-block">
+            <img src="images/carrousel3new1.png" class="d-block w-100 h-50" width="350" height="233" alt="carrousel3" />
+            <div class="carousel-caption">
               <h5 class="c-carousel__title">Splinternieuwe platen</h5>
               <p class="c-carousel__title">De nieuwste exclusieve platen</p>
             </div>
@@ -76,39 +79,39 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <section class="c-video">
+      <section id="video" class="c-video">
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
               <h1 class="c-video__title"><img src="images/hoplogozwart.png" alt="hoplogo-zwart" width="38" height="70" /> Ontdek de Ververie!</h1>
             </div>
             <div class="col-xl-10 text-center c-video__container">
-              <iframe  width="560" height="315" src="https://www.youtube.com/embed/DGGRbTobnE0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/DGGRbTobnE0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </section>
     </header>
     <main>
-      <section class="c-recensie">
+      <section id="recensie" class="c-recensie">
         <div class="container">
-          <div class="row">
+          <div class="row justify-content-center">
             <h2><img src="images/ververielogowit.png" alt="hoplogo-zwart" width="38" height="70" /> Wat anderen van de ververie vinden</h2>
-            <div class="col-lg-3 col-md-4 offset-lg-1 c-recensie__bruno bubble-bottom-left">
+            <div class="col-lg-3 col-md-3 offset-md-1 c-recensie__bruno bubble-bottom-left">
               <h3>Bruno <i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-fill c-recensie__star"></i></h3>
               <p class="text-center">
                 <br />
                 "Heel mooi en gezellig café! Leuk aanbod van 2de hands platen, deze zijn in heel mooie staat en fair qua prijs."
               </p>
             </div>
-            <div class="col-lg-3 col-md-4 offset-md-1 offset-lg-1 c-recensie__joseline bubble-bottom-left">
+            <div class="col-lg-3 col-md-3 offset-md-1 c-recensie__joseline bubble-bottom-left">
               <h3>Nicolas <i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-half c-recensie__star"></i></h3>
               <p class="text-center">"Gewoon top voor iedere muziekliefhebber, de muziek is gewoon top en de bediening is ook helemaal zo als het moet. Het voelt als binnenstappen in de jaren 50 door de platen en de jukebox."</p>
             </div>
-            <div class="col-lg-3 col-md-12 offset-lg-1 c-recensie__greta bubble-bottom-left">
+            <div class="col-lg-3 col-md-3 offset-md-1 c-recensie__greta bubble-bottom-left">
               <h3>Greta <i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-fill c-recensie__star"></i><i class="bi bi-star-fill c-recensie__star"></i></h3>
-              <p class="c-recensie__subtitle"><em> CEO, Acme Industries</em></p>
-              <p class="text-center">"Toffe zaak! Mooi interieur, gezellige sfeer, leuke keuze aan frisdranken, koffie en thee maar ook verrassende biertjes. Wij komen zeker nog veel terug!"</p>
+              <!-- <p class="c-recensie__subtitle"><em> CEO, Acme Industries</em></p> -->
+              <p class="text-center">"Toffe zaak! Mooi interieur, gezellige sfeer, leuke keuze aan frisdranken, koffie en thee maar ook verrassende biertjes en zeer goede platen!. Wij komen zeker nog veel terug!"</p>
             </div>
           </div>
         </div>
@@ -119,16 +122,16 @@
             <h2 class="c-title"><img src="images/hoplogozwart.png" alt="hoplogo-zwart" width="38" height="70" /> Over</h2>
             <div class="col-lg-6 c-over__text align-self-center">
               <p>
-                De ververie begon 8 augustus 2018. Een nieuwe kroeg in het hartje van Kuurne. De uitbater Deef was onderwijzer in het lager onderwijs in de centrumschool Kuurne. Tot de grote liefde voor koffie, bier, taart, vinyl en grote muziek zo groot werd dat hij besloot een eigen ‘koffievynilkroeg’ uit te bouwen. <br /><br />
+                De ververie begon 8 augustus 2018. Een nieuwe kroeg in het hartje van Kuurne. De uitbater Deef was onderwijzer in het lager onderwijs in de centrumschool Kuurne. Tot de grote liefde voor koffie, bier, taart, vinyl en grote muziek zo groot werd dat hij besloot een eigen ‘koffievinylkroeg’ uit te bouwen. <br /><br />
                 Ondertussen is de ververie gekend voor een fijn concept. Dat niet verlegen is om nu en dan eens speciaal uit de hoek te komen, is al geweten. Een thema-avond, nu en dan eens een optreden en comedy, alles passeert de revue. Altijd met goesting. Altijd met aandacht voor sfeer.
                 <br /><br />
-                Met warme dagen ontvangt Deef zijn klanten graag op het terras met een prachtig geschilderd zeelandschap. Naast al het drinken is er een vynilshop in het cafe. Daar kan je uw favoriete plaat uitzoeken én testen.
+                Met warme dagen ontvangt Deef zijn klanten graag op het terras met een prachtig geschilderd zeelandschap. Naast al het drinken is er een vinylshop in het cafe. Daar kan je uw favoriete plaat uitzoeken én testen.
                 <br /><br />
                 Kortom, gezelligheid, sfeer, drank en vooral goede muziek. Het Ververie-team zal je met open armen en grote glimlach ontvangen en bedienen.
               </p>
             </div>
             <div class="offset-lg-1 text-center col-lg-5">
-              <img src="images/ververieomgevingshadow.png" alt="over-foto" width="510" height="500" />
+              <img class="img-fluid" src="images/ververieomgevingshadow.png" alt="over-foto" width="510" height="500" />
             </div>
           </div>
         </div>
@@ -137,10 +140,10 @@
         <div class="container">
           <div class="row">
             <h2 class="c-title"><img src="images/ververielogowit.png" alt="hoplogo-zwart" width="38" height="70" /> Concept</h2>
-            <div class="col-lg-6 text-center">
-              <img src="images/ververieplatenshadow.png" alt="concept-foto" width="510" height="500" />
+            <div class="col-lg-6 order-lg-1 text-center">
+              <img class="img-fluid" src="images/ververieplatenshadow.png" alt="concept-foto" width="510" height="500" />
             </div>
-            <div class="col-lg-6 align-self-center">
+            <div class="col-lg-6 order-lg-2 align-self-center">
               <p>
                 De ververie is een gezellig kroeg waar je verschillende soorten koffie, lekker gebak, een eigenzinnige tapas, een stevig pintje of een streekbiertje kan vinden. <br /><br />
                 Naast dit alles is er een vinylshop in de winkel. Bestel je drank aan je tafel en ga eens kijken naar de het assortiment tweedehandsplaatjes en nieuwe pareltjes.
@@ -164,32 +167,34 @@
                     <a href="https://www.facebook.com/deververie/" target="blank"><i class="bi bi-facebook"></i></a>
                     <a href="https://www.instagram.com/deververie/" target="blank"><i class="bi bi-instagram"></i></a>
                   </div>
-                  <div class="col-lg-6 col-md-5 c-contact__info">
-                    <i class="bi bi-geo-alt-fill c-contact__icon"></i>
-                    <h3>Adres</h3>
-                    <a class="c-contact__link" href="https://www.google.com/maps/dir//De+Ververie+Kon.+Elisabethstraat+15+8520+Kuurne/@50.8509126,3.2856589,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47c33be6e00563f3:0x9063a6e0f1a72970!2m2!1d3.2856589!2d50.8509126" target="blank">
-                      Koningin Elisabethstraat 15, <br />
-                      8520 Kuurne</a
-                    >
-                  </div>
-                  <div class="col-lg-6 col-md-5 c-contact__info">
-                    <i class="bi bi-clock-fill c-contact__icon"></i>
-                    <h3>Openingsuren</h3>
-                    <p>
-                      Maandag & Dinsdag: Gesloten <br />
-                      Woensdag - Zaterdag: 14u00 - 01u00 <br />
-                      Zondag : 14u00 - 22u
-                    </p>
-                  </div>
-                  <div class="col-lg-6 col-md-5 c-contact__info">
-                    <i class="bi bi-envelope-fill c-contact__icon"></i>
-                    <h3>E-mail</h3>
-                    <a class="c-contact__link" href="mailto:info@deververie.be">info@deververie.be</a>
-                  </div>
-                  <div class="col-lg-6 col-md-5 c-contact__info">
-                    <i class="bi bi-telephone-fill c-contact__icon"></i>
-                    <h3>Telefoon</h3>
-                    <a class="c-contact__link" href="tel:+32498234231">+32 498 23 42 31</a>
+                  <div class="row c-info">
+                    <div class="col-lg-6 col-md-5 c-contact__info">
+                      <i class="bi bi-geo-alt-fill c-contact__icon"></i>
+                      <h3>Adres</h3>
+                      <a class="c-contact__link" href="https://www.google.com/maps/dir//De+Ververie+Kon.+Elisabethstraat+15+8520+Kuurne/@50.8509126,3.2856589,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47c33be6e00563f3:0x9063a6e0f1a72970!2m2!1d3.2856589!2d50.8509126" target="blank">
+                        Koningin Elisabethstraat 15, <br />
+                        8520 Kuurne</a
+                      >
+                    </div>
+                    <div class="col-lg-6 col-md-5 c-contact__info">
+                      <i class="bi bi-clock-fill c-contact__icon"></i>
+                      <h3>Openingsuren</h3>
+                      <p>
+                        Maandag & Dinsdag: Gesloten <br />
+                        Woensdag - Zaterdag: 14u00 - 01u00 <br />
+                        Zondag : 14u00 - 22u
+                      </p>
+                    </div>
+                    <div class="col-lg-6 col-md-5 c-contact__info">
+                      <i class="bi bi-envelope-fill c-contact__icon"></i>
+                      <h3>E-mail</h3>
+                      <a class="c-contact__link" href="mailto:info@deververie.be">info@deververie.be</a>
+                    </div>
+                    <div class="col-lg-6 col-md-5 c-contact__info">
+                      <i class="bi bi-telephone-fill c-contact__icon"></i>
+                      <h3>Telefoon</h3>
+                      <a class="c-contact__link" href="tel:+32498234231">+32 498 23 42 31</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -239,13 +244,13 @@
               <img class="c-footer__img" src="images/cropped-Logo_deververie_wit-300x282.png" alt="logo-ververie" width="116" height="110" />
             </div>
             <div class="col-lg-2 text-center">
-              <p class="c-footer__txt">info@deververie.be</p>
+              <a class="c-footer__txt" href="mailto:info@deververie.be">info@deververie.be</a>
             </div>
             <div class="col-lg-2 text-center">
-              <p class="c-footer__txt">+32 498 23 42 31</p>
+              <a class="c-footer__txt" href="tel:+32498234231">+32 498 23 42 31</a>
             </div>
             <div class="col-lg-2 text-center">
-              <p class="c-footer__txt">Kon. Elisabethstraat 15</p>
+              <a class="c-footer__txt" href="https://www.google.com/maps/dir//De+Ververie+Kon.+Elisabethstraat+15+8520+Kuurne/@50.8509126,3.2856589,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47c33be6e00563f3:0x9063a6e0f1a72970!2m2!1d3.2856589!2d50.8509126" target="blank">Kon. Elisabethstraat 15</a>
             </div>
             <div class="col-lg-1 offset-lg-2 text-center">
               <a class="c-footer__link" href="https://www.facebook.com/deververie/" target="blank"><i class="bi bi-facebook"></i></a>
