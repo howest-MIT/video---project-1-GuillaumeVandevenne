@@ -67,6 +67,9 @@ nav {
 textarea {
   padding-bottom: 0;
 }
+header {
+  padding-bottom: 4rem;
+}
 /*---------------------------------------/*
  # OBJECTS
 /*---------------------------------------*/
@@ -74,42 +77,42 @@ textarea {
 /*---------------------------------------/*
  # COMPONENTS
 /*---------------------------------------*/
+//-------- VIDEO --------//
 .c-video {
-  // background-color: $color-dark;
-  margin: -1rem;
-  padding-bottom: 3rem;
-  &__title {
-    padding: 2rem 0;
-  }
-  &__container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    height: 0;
-  }
-
-  &__container iframe,
-  &__container object,
-  &__container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+  padding: 2.5rem 0;
 }
+.c-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.c-container iframe,
+.c-container object,
+.c-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+//-------- CAROUSEL --------//
 
 .c-carousel {
   &__title {
-    text-shadow: 1px 1px 2px $color-dark;
+    font-size: 1.5rem;
+    text-shadow: 3px 3px 3px $color-dark;
     @media only screen and (max-width: 460px) {
       font-size: $fontsize-small;
     }
   }
 }
 
+//-------- RECENSIE --------//
+
 .c-recensie {
-  padding: 3rem 0;
+  padding: 5rem 0;
   color: $color-dark;
   background-color: $color-dark;
   margin-top: 1rem;
@@ -161,8 +164,9 @@ textarea {
   bottom: -24px;
 }
 
+//-------- OVER --------//
 .c-over {
-  padding: 2rem 0;
+  padding: 5rem 0;
   &__text {
     padding: 1rem 1rem;
   }
@@ -171,13 +175,18 @@ textarea {
   }
 }
 
+//-------- CONCEPT --------//
+
 .c-concept {
-  padding: 2rem 0;
+  padding: 5rem 0;
   background-color: $color-dark;
   color: $color-white;
 }
+
+//-------- CONTACT --------//
+
 .c-contact {
-  padding-top: 2rem;
+  padding-top: 5rem;
   &__icon {
     color: $color-yellow;
     font-size: $fontsize-icon;
@@ -188,13 +197,13 @@ textarea {
     height: 25rem;
   }
   &__info {
-    padding: 2rem 0;
+    padding: 2rem 0em;
   }
   &__form {
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin-bottom: 5rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
     box-shadow: 2px 2px 6px black;
   }
   &__formulier {
@@ -225,6 +234,37 @@ textarea {
 .c-title {
   padding-bottom: 2rem;
 }
+.c-map {
+  height: 400px;
+}
+.c-info {
+  @media only screen and (max-width: 600px) {
+    margin-left: 2rem;
+  }
+}
+.sidenav {
+  margin-top: 10.5rem;
+  height: auto;
+  width: auto;
+  position: absolute;
+  left: 0;
+  background-color: $color-yellow;
+  overflow-x: hidden;
+  padding-top: 2px;
+}
+.sidenav a {
+  padding: 3px 5px 3px 3px;
+  text-decoration: none;
+  font-size: 25px;
+  color: $color-dark;
+  display: block;
+  &:hover {
+    color: $color-white;
+    transition: 0.4s;
+  }
+}
+//-------- NIEUWSBRIEF --------//
+
 .c-nieuwsbrief {
   background-image: url(../images/plaat_nieuwbrief1.png);
   height: 378px;
@@ -243,14 +283,34 @@ textarea {
   }
   &__icn {
     padding: 3rem 0;
+    &:hover {
+      transform: rotate(180degr);
+    }
   }
 }
+
+//-------- FAQ --------//
+.c-faq {
+  padding: 5rem;
+  &__list {
+    list-style-image: url(../images/vinyl-fill.svg);
+  }
+  &__txt {
+    padding-left: 1rem;
+  }
+  &__spotify {
+    margin-top: 2rem;
+  }
+}
+
+//-------- FOOTER --------//
 .c-footer {
   padding-top: 0.75rem;
   background-color: $color-dark;
   color: $color-white;
   &__link {
     padding-top: 3rem;
+    padding-left: 0.5rem;
     color: $color-white;
     &:hover {
       color: $color-yellow;
@@ -258,7 +318,7 @@ textarea {
   }
   &__copy {
     font-size: $fontsize-small;
-    color: $color-grey;
+    color: $color-white;
   }
   &__txt {
     color: white;
@@ -269,6 +329,8 @@ textarea {
     }
   }
 }
+//-------- NAVIGATION --------//
+
 .c-top a {
   color: $color-yellow;
   font-size: 2rem;
@@ -284,16 +346,33 @@ textarea {
   }
 }
 
-.c-map {
-  height: 400px;
+.c-ham {
+  font-size: $fontsize-headertitle;
+  color: $color-white;
+  &:hover {
+    color: $color-yellow;
+  }
+}
+
+.c-nav {
+  &__img {
+    margin-left: 3rem;
+    @media only screen and (max-width: 360px) {
+      margin-left: 0;
+    }
+  }
 }
 /*---------------------------------------/*
  # BOOTSTRAP
 /*---------------------------------------*/
+
+//-------- CONTACT --------//
+
 .form-control {
   border: none;
   border-radius: 0;
   border-bottom: 2px solid $color-dark;
+
   &::placeholder {
     color: $color-dark;
   }
@@ -307,12 +386,27 @@ textarea {
   color: $color-dark;
 }
 
+//-------- NAVIGATION --------//
+
 .navbar-dark .navbar-nav .nav-link {
   color: $color-white;
+  padding-right: 1rem;
   &:hover {
     color: $color-yellow;
   }
 }
+
+.navbar-dark .navbar-toggler {
+  color: $color-dark;
+  border-color: $color-dark;
+}
+
+.navbar-expand-md .navbar-nav {
+  padding-right: 4rem;
+}
+
+//-------- NIEUWBRIEF --------//
+// Button //
 
 .btn-primary {
   border: none;
@@ -352,68 +446,37 @@ textarea {
     box-shadow: none;
   }
 }
+//-------- CAROUSEL --------//
+
 .carousel-indicators [data-bs-target] {
   background-color: $color-yellow;
 }
 
-.navbar-dark .navbar-toggler {
-  color: $color-dark;
-  border-color: $color-dark;
-}
-.c-ham {
-  font-size: $fontsize-headertitle;
-  color: $color-white;
-  &:hover {
-    color: $color-yellow;
-  }
-}
-.navbar-expand-md .navbar-nav {
-  padding-right: 4rem;
-}
 .carousel-caption {
   @media only screen and (max-width: 460px) {
     padding: 0.5rem;
     font-size: $fontsize-small;
   }
 }
+//-------- FAQ --------//
+
+.accordion-item {
+  border: 1px solid $color-dark;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #fec0163a;
+  color: $color-dark;
+}
+.accordion-button:focus {
+  box-shadow: 0 0 0 0 rgb(13 110 253 / 25%);
+}
+.accordion-button::after {
+  background-image: url(../images/arrow-down.svg);
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../images/arrow-up.svg);
+  transform: none;
+}
 /*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/
-
-/* The sidebar menu */
-.sidenav {
-  margin-top: 9rem;
-  height: auto; /* Full-height: remove this if you want "auto" height */
-  width: auto; /* Set the width of the sidebar */
-  position: absolute; /* Fixed Sidebar (stay in place on scroll) */
-  left: 0;
-  background-color: $color-yellow; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 2px;
-}
-.sidenav a {
-  padding: 6px 8px 6px 6px;
-  text-decoration: none;
-  font-size: 25px;
-  color: $color-dark;
-  display: block;
-  &:hover {
-    color: $color-white;
-    transition: 0.4s;
-  }
-}
-
-.c-info {
-  @media only screen and (max-width: 600px) {
-    margin-left: 2rem;
-  }
-}
-
-.c-nav {
-  &__img {
-    margin-left: 3rem;
-    @media only screen and (max-width: 360px) {
-      margin-left: 0;
-    }
-  }
-}

@@ -58,6 +58,10 @@ textarea {
   padding-bottom: 0;
 }
 
+header {
+  padding-bottom: 4rem;
+}
+
 /*---------------------------------------/*
  # OBJECTS
 /*---------------------------------------*/
@@ -65,19 +69,19 @@ textarea {
  # COMPONENTS
 /*---------------------------------------*/
 .c-video {
-  margin: -1rem;
-  padding-bottom: 3rem;
+  padding: 2.5rem 0;
 }
-.c-video__title {
-  padding: 2rem 0;
-}
-.c-video__container {
+
+.c-container {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
   height: 0;
 }
-.c-video__container iframe, .c-video__container object, .c-video__container embed {
+
+.c-container iframe,
+.c-container object,
+.c-container embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -86,7 +90,8 @@ textarea {
 }
 
 .c-carousel__title {
-  text-shadow: 1px 1px 2px #1d1922;
+  font-size: 1.5rem;
+  text-shadow: 3px 3px 3px #1d1922;
 }
 @media only screen and (max-width: 460px) {
   .c-carousel__title {
@@ -95,7 +100,7 @@ textarea {
 }
 
 .c-recensie {
-  padding: 3rem 0;
+  padding: 5rem 0;
   color: #1d1922;
   background-color: #1d1922;
   margin-top: 1rem;
@@ -148,7 +153,7 @@ textarea {
 }
 
 .c-over {
-  padding: 2rem 0;
+  padding: 5rem 0;
 }
 .c-over__text {
   padding: 1rem 1rem;
@@ -158,13 +163,13 @@ textarea {
 }
 
 .c-concept {
-  padding: 2rem 0;
+  padding: 5rem 0;
   background-color: #1d1922;
   color: #fefefe;
 }
 
 .c-contact {
-  padding-top: 2rem;
+  padding-top: 5rem;
 }
 .c-contact__icon {
   color: #fec116;
@@ -176,13 +181,13 @@ textarea {
   height: 25rem;
 }
 .c-contact__info {
-  padding: 2rem 0;
+  padding: 2rem 0em;
 }
 .c-contact__form {
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin-bottom: 5rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
   box-shadow: 2px 2px 6px black;
 }
 .c-contact__formulier {
@@ -214,6 +219,39 @@ textarea {
   padding-bottom: 2rem;
 }
 
+.c-map {
+  height: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+  .c-info {
+    margin-left: 2rem;
+  }
+}
+
+.sidenav {
+  margin-top: 10.5rem;
+  height: auto;
+  width: auto;
+  position: absolute;
+  left: 0;
+  background-color: #fec116;
+  overflow-x: hidden;
+  padding-top: 2px;
+}
+
+.sidenav a {
+  padding: 3px 5px 3px 3px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #1d1922;
+  display: block;
+}
+.sidenav a:hover {
+  color: #fefefe;
+  transition: 0.4s;
+}
+
 .c-nieuwsbrief {
   background-image: url(../images/plaat_nieuwbrief1.png);
   height: 378px;
@@ -234,6 +272,22 @@ textarea {
 .c-nieuwsbrief__icn {
   padding: 3rem 0;
 }
+.c-nieuwsbrief__icn:hover {
+  transform: rotate(180degr);
+}
+
+.c-faq {
+  padding: 5rem;
+}
+.c-faq__list {
+  list-style-image: url(../images/vinyl-fill.svg);
+}
+.c-faq__txt {
+  padding-left: 1rem;
+}
+.c-faq__spotify {
+  margin-top: 2rem;
+}
 
 .c-footer {
   padding-top: 0.75rem;
@@ -242,6 +296,7 @@ textarea {
 }
 .c-footer__link {
   padding-top: 3rem;
+  padding-left: 0.5rem;
   color: #fefefe;
 }
 .c-footer__link:hover {
@@ -249,7 +304,7 @@ textarea {
 }
 .c-footer__copy {
   font-size: 0.75rem;
-  color: #41464a;
+  color: #fefefe;
 }
 .c-footer__txt {
   color: white;
@@ -275,8 +330,21 @@ textarea {
   transition: 0.4s;
 }
 
-.c-map {
-  height: 400px;
+.c-ham {
+  font-size: calc(1.375rem + 1.5vw);
+  color: #fefefe;
+}
+.c-ham:hover {
+  color: #fec116;
+}
+
+.c-nav__img {
+  margin-left: 3rem;
+}
+@media only screen and (max-width: 360px) {
+  .c-nav__img {
+    margin-left: 0;
+  }
 }
 
 /*---------------------------------------/*
@@ -308,9 +376,19 @@ textarea {
 
 .navbar-dark .navbar-nav .nav-link {
   color: #fefefe;
+  padding-right: 1rem;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #fec116;
+}
+
+.navbar-dark .navbar-toggler {
+  color: #1d1922;
+  border-color: #1d1922;
+}
+
+.navbar-expand-md .navbar-nav {
+  padding-right: 4rem;
 }
 
 .btn-primary {
@@ -357,23 +435,6 @@ textarea {
   background-color: #fec116;
 }
 
-.navbar-dark .navbar-toggler {
-  color: #1d1922;
-  border-color: #1d1922;
-}
-
-.c-ham {
-  font-size: calc(1.375rem + 1.5vw);
-  color: #fefefe;
-}
-.c-ham:hover {
-  color: #fec116;
-}
-
-.navbar-expand-md .navbar-nav {
-  padding-right: 4rem;
-}
-
 @media only screen and (max-width: 460px) {
   .carousel-caption {
     padding: 0.5rem;
@@ -381,49 +442,28 @@ textarea {
   }
 }
 
+.accordion-item {
+  border: 1px solid #1d1922;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #fec0163a;
+  color: #1d1922;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.25);
+}
+
+.accordion-button::after {
+  background-image: url(../images/arrow-down.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../images/arrow-up.svg);
+  transform: none;
+}
+
 /*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/
-/* The sidebar menu */
-.sidenav {
-  margin-top: 9rem;
-  height: auto;
-  /* Full-height: remove this if you want "auto" height */
-  width: auto;
-  /* Set the width of the sidebar */
-  position: absolute;
-  /* Fixed Sidebar (stay in place on scroll) */
-  left: 0;
-  background-color: #fec116;
-  /* Black */
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
-  padding-top: 2px;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 6px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #1d1922;
-  display: block;
-}
-.sidenav a:hover {
-  color: #fefefe;
-  transition: 0.4s;
-}
-
-@media only screen and (max-width: 600px) {
-  .c-info {
-    margin-left: 2rem;
-  }
-}
-
-.c-nav__img {
-  margin-left: 3rem;
-}
-@media only screen and (max-width: 360px) {
-  .c-nav__img {
-    margin-left: 0;
-  }
-}
